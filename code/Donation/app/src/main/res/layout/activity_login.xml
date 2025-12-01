@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Base.Theme.Test1000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue2"
+    tools:context=".LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic|bold"
+                android:textSize="20dp"
+                android:fontFamily="@font/bold"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Rejoignez notre communauté de donateurs et faites une différence dès aujourd'hui !"
+                android:textColor="@color/blue"/>
+            <EditText
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/mail"
+                android:drawablePadding="8dp"
+                android:hint="@string/adresse_e_mail"
+                android:fontFamily="@font/regular"
+                android:padding="12dp"
+                android:textColorHint="@color/blue"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/error_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:textSize="10dp"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                android:text="@string/veuillez_entrer_une_adresse_e_mail_valide"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:textColorHint="@color/black"
+                android:background="@drawable/edittext"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="8dp"
+                android:hint="@string/mot_de_passe"
+                android:fontFamily="@font/regular"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/forgotPasswordText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:onClick="forgotPasswordClicked"
+                android:text="@string/forgot_password"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/bold"
+                android:textStyle="italic|bold"
+                />
+            <TextView
+                android:id="@+id/error_mdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:textSize="10dp"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                android:text="Email ou mot de passe érroné"/>
+
+            <TextView
+                android:id="@+id/error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:layout_gravity="start"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                android:text="@string/tous_les_champs_sont_requis"/>
+
+            <Button
+                android:id="@+id/loginbouton"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/bold"
+                android:backgroundTint="@color/blue"
+                android:text="@string/se_connecter"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/loginadmin"
+                android:layout_width="200dp"
+                android:fontFamily="@font/bold"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/black"
+                android:text="Connection admin"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:fontFamily="@font/regular"
+                    android:id="@+id/already_have_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vous_n_avez_pas_un_compte"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/registerbouton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s_inscrire"
+                    android:fontFamily="@font/bold"
+                    android:textStyle="italic|bold"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

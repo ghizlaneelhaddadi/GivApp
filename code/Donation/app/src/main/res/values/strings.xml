@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">GivApp</string>
+    <string name="adresse_e_mail">Adresse E-mail</string>
+    <string name="nom_complet">Nom complet</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="vous_n_avez_pas_un_compte">Vous n\'avez pas un compte?</string>
+    <string name="s_inscrire">S\'inscrire</string>
+    <string name="num_ro_de_t_lephone">Numéro de télephone</string>
+    <string name="v_rifier_mot_de_passe">vérifier mot de passe</string>
+    <string name="vous_avez_d_ja_un_compte">Vous avez déja un compte?</string>
+    <string name="default_web_client_id">YOUR_WEB_CLIENT_ID</string>
+    <string name="connecter">Connecter</string>
+    <string name="facebook_app_id">YOUR_FACEBOOK_APP_ID</string>
+    <string name="fb_login_protocol_scheme">fbYOUR_FACEBOOK_APP_ID</string>
+    <string name="rechercher">Rechercher</string>
+    <string name="entrez_votre_adresse">Entrez votre adresse</string>
+    <string name="retour">Retour</string>
+    <string name="d_tails_de_soci_t">Détails de société</string>
+    <string name="faire_une_donation">Faire une donation</string>
+    <string name="modifier_le_profile">Modifier le profile</string>
+    <string name="nom_d_utilisateur">Nom d\'utilisateur</string>
+    <string name="email">Email</string>
+    <string name="num_ro_de_t_l_phone">Numéro de téléphone</string>
+    <string name="ancien_mot_de_passe">Ancien mot de passe</string>
+    <string name="nouveau_mot_de_passe">Nouveau mot de passe</string>
+    <string name="modifier">Modifier</string>
+    <string name="ev_nements">Evénements</string>
+    <string name="d_tails_d_v_nement">Détails d\'événement</string>
+    <string name="next">Next</string>
+    <string name="givapp">GivApp</string>
+    <string name="donnez_changez_des_vies">Donnez. Changez des vies!</string>
+    <string name="rechercher_de_categories">Rechercher de categories…</string>
+    <string name="education">Education</string>
+    <string name="voir_plus">voir plus</string>
+    <string name="sant">Santé</string>
+    <string name="v_tements">Vétements</string>
+    <string name="nourriture">Nourriture</string>
+    <string name="animaux">Animaux</string>
+    <string name="environement">Environement</string>
+    <string name="entrer_votre_details">Entrer votre details</string>
+    <string name="votre_location">Votre location</string>
+    <string name="adresse_compl_te">Adresse complète</string>
+    <string name="enregistrer">Enregistrer</string>
+    <string name="paramtres">parametre</string>
+    <string name="compte">Compte</string>
+    <string name="langue">Langue</string>
+    <string name="location">Localisation</string>
+    <string name="s_curit">Sécurité</string>
+    <string name="d_connexion">Déconnexion</string>
+    <string name="historique_des_dons">votre donation</string>
+    <string name="notifications">Notifications</string>
+    <string name="modifier_le_profil">Modifier le profil</string>
+    <string name="profile">Profile</string>
+    <string name="tous">Tous</string>
+    <string name="francais">Francais</string>
+    <string name="arabe">Arabe</string>
+    <string name="anglais">Anglais</string>
+    <string name="faites_une_diff_rence_dans_les_soins_de_sant">Faites une différence dans les soins de santé</string>
+    <string name="securit">Securité</string>
+    <string name="dark_mode">Mode sombre</string>
+    <string name="no_notifications">Pas de notifications pour le moment\n</string>
+    <string name="information_personnel">Modifier votre profile</string>
+    <string name="types_of_notifications">Notifications\n</string>
+    <string name="push_notifications">Notifications Push</string>
+    <string name="email_notifications">Email Notifications</string>
+    <string name="sms_notifications">SMS Notifications</string>
+    <string name="notifications_generales">Notifications générales</string>
+    <string name="message_notifications">Message notifications</string>
+    <string name="messages">Messages</string>
+    <string name="reminders">Rappels</string>
+    <string name="app_notifications">Notifications de l\'application</string>
+    <string name="sound">Son</string>
+    <string name="tone">Sonnerie</string>
+    <string name="default_tone">Par défaut</string>
+    <string name="delete">Supprimer la donation\n</string>
+    <string name="vibrate">Vibration</string>
+    <string name="forgot_password" translatable="false">mot de passe oublie?</string>
+    <string-array name="modes_paiement_array">
+        <item>Carte de Crédit</item>
+        <item>PayPal</item>
+        <item>Virement Bancaire</item>
+        <item>Autre</item>
+    </string-array>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="adresse">Adresse</string>
+    <string name="téléphone">Numero de telephone\n</string>
+    <string name="status">Status</string>
+    <string name="nationality">nationalité</string>
+    <string name="address">Addresse</string>
+    <string name="edit_profile">Modifier profil</string>
+    <string name="ajouter">Enregistrer</string>
+    <string name="s_enregistrer">s\'enregistrer</string>
+    <string name="tous_les_champs_sont_requis">tous les champs sont requis</string>
+    <string name="veuillez_entrer_une_adresse_e_mail_valide">veuillez entrer une adresse e-mail valide</string>
+
+</resources>

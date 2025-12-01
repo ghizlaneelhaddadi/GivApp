@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Add your registration UI components here -->
+    <EditText
+        android:background="@drawable/edittext"
+        android:id="@+id/editTextName"
+        android:textColorHint="@color/blue"
+        android:fontFamily="@font/regular"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Entrez votre nom ici" />
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="10dp"
+        android:textSize="10dp"
+        android:fontFamily="@font/bold"
+        android:textColor="@color/red"
+        android:visibility="gone"
+        android:text="Veuillez entrer le nom"/>
+    <Button
+        android:id="@+id/buttonRegister"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:text="S'enregistrer" />
+
+</LinearLayout>

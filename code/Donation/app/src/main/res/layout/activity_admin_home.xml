@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="60dp"
+        android:layout_height="56dp"
+        android:id="@+id/add"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/add"
+        android:layout_margin="30dp"
+        android:scaleType="fitCenter"
+        android:outlineAmbientShadowColor="@color/blue"
+        android:outlineSpotShadowColor="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/li"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/blue"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                tools:ignore="ExtraText">>
+
+                <TextView
+                    android:id="@+id/name"
+                    android:fontFamily="@font/bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/givapp"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/users"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/user2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/donnez_changez_des_vies"
+                        android:textSize="20dp"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <HorizontalScrollView
+                    android:id="@+id/sc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/lin"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/vtous"
+                            android:fontFamily="@font/bold"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/edittext"
+                            android:backgroundTint="@color/gray"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:drawableStart="@drawable/all"
+                            android:text="tous"
+                            android:textColor="@color/blue"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck" />
+
+                        <TextView
+                            android:id="@+id/educ"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/regular"
+                            android:background="@drawable/edittext"
+                            android:backgroundTint="@color/gray"
+                            android:drawableStart="@drawable/educ"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/education"
+                            android:textColor="@color/blue"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck" />
+
+                        <TextView
+                            android:id="@+id/sante"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@font/regular"
+                            android:background="@drawable/edittext"
+                            android:backgroundTint="@color/gray"
+                            android:drawableStart="@drawable/sante"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="@string/sant"
+                            android:textColor="@color/blue"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck" />
+
+                        <TextView
+                            android:id="@+id/vetement"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/edittext"
+                            android:backgroundTint="@color/gray"
+                            android:drawableStart="@drawable/vete"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:fontFamily="@font/regular"
+                            android:text="@string/v_tements"
+                            android:textColor="@color/blue"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            tools:ignore="TextSizeCheck" />
+
+                        <TextView
+                            android:id="@+id/food"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/edittext"
+                            android:backgroundTint="@color/gray"
+                            android:drawableStart="@drawable/food"
+                            android:gravity="center"
+                            android:fontFamily="@font/regular"
+                            android:padding="10dp"
+                            android:text="@string/nourriture"
+                            android:textColor="@color/blue"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ani"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/edittext"
+                            android:backgroundTint="@color/gray"
+                            android:drawableStart="@drawable/animaux"
+                            android:gravity="center"
+                            android:fontFamily="@font/regular"
+                            android:padding="10dp"
+                            android:text="@string/animaux"
+                            android:textColor="@color/blue"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/envi"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/edittext"
+                            android:backgroundTint="@color/gray"
+                            android:drawableStart="@drawable/env"
+                            android:gravity="center"
+                            android:fontFamily="@font/regular"
+                            android:padding="10dp"
+                            android:text="@string/environement"
+                            android:textColor="@color/blue"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="60dp">
+
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/list_soc_by_cat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:visibility="gone" />
+
+                    <ScrollView
+                        android:id="@+id/recyclecat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/education"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_weight="1"
+                                        android:drawableStart="@drawable/educ"
+                                        android:gravity="center"
+                                        android:fontFamily="@font/regular"
+                                        android:text="@string/education"
+                                        android:textColor="@color/blue"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold"
+                                        tools:ignore="TextSizeCheck" />
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/ed"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/medical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_weight="1"
+                                        android:drawableStart="@drawable/sante"
+                                        android:gravity="center"
+                                        android:fontFamily="@font/regular"
+                                        android:text="@string/sant"
+                                        android:textColor="@color/blue"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold"
+                                        tools:ignore="TextSizeCheck" />
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/med"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/vetements"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_weight="1"
+                                        android:drawableStart="@drawable/vete"
+                                        android:gravity="center"
+                                        android:fontFamily="@font/regular"
+                                        android:text="@string/v_tements"
+                                        android:textColor="@color/blue"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold"
+                                        tools:ignore="TextSizeCheck" />
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/vet"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/nourriture"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/regular"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_weight="1"
+                                        android:drawableStart="@drawable/food"
+                                        android:gravity="center"
+                                        android:text="@string/nourriture"
+                                        android:textColor="@color/blue"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/nour"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/animaux"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_weight="1"
+                                        android:drawableStart="@drawable/animaux"
+                                        android:gravity="center"
+                                        android:text="@string/animaux"
+                                        android:fontFamily="@font/regular"
+                                        android:textColor="@color/blue"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/anim"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/environement"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_weight="1"
+                                        android:drawableStart="@drawable/env"
+                                        android:gravity="center"
+                                        android:fontFamily="@font/regular"
+                                        android:text="@string/environement"
+                                        android:textColor="@color/blue"
+                                        android:textSize="15dp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/env"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </ScrollView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:id="@+id/bottom"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="BottomAppBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/hi"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/home"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Evenements"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/si1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/event"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profil"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/pi"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/profil"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/si"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/para"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="DuplicateIds" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.bottomappbar.BottomAppBar>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".DonationActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/back_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/bold"
+            android:gravity="center_horizontal"
+            android:textColor="@color/blue"
+            android:text="Modifier le profile"
+            app:drawableStartCompat="@drawable/back" />
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="210dp">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:background="@color/gray"
+                        android:id="@+id/image"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_margin="4dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/geninfo"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/bold"
+                    android:drawableEnd="@drawable/arrow"
+                    android:text="Des informations génerales"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/infosgener">
+                    <EditText
+                        android:id="@+id/id_nom"
+                        android:fontFamily="@font/regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:textColorHint="@color/light_gray"
+                        android:inputType="text"
+                        android:hint="Nom complét"
+                        android:backgroundTint="@color/gray"
+                        android:padding="10dp"
+                        android:background="@drawable/edittext"
+                        />
+
+                    <EditText
+                        android:id="@+id/id_eml"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/regular"
+                        android:inputType="textEmailAddress"
+                        android:layout_margin="10dp"
+                        android:textColorHint="@color/light_gray"
+                        android:hint="Adresse E-mail"
+                        android:padding="10dp"
+                        android:backgroundTint="@color/gray"
+                        android:background="@drawable/edittext"
+                        />
+
+                    <EditText
+                        android:id="@+id/id_tel"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/regular"
+                        android:inputType="number"
+                        android:textColorHint="@color/light_gray"
+                        android:hint="Télephone"
+                        android:padding="10dp"
+                        android:backgroundTint="@color/gray"
+                        android:background="@drawable/edittext"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/gray"
+                android:backgroundTint="@color/gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/bold"
+                    android:id="@+id/soc"
+                    android:drawableEnd="@drawable/arrow"
+                    android:text="Social média"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/contact">
+                    <EditText
+                        android:id="@+id/id_face"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/regular"
+                        android:textColorHint="@color/light_gray"
+                        android:hint="Facebook"
+                        android:backgroundTint="@color/gray"
+                        android:padding="10dp"
+                        android:background="@drawable/edittext"
+                        />
+                    <EditText
+                        android:id="@+id/id_inst"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:textColorHint="@color/light_gray"
+                        android:hint="Instagrame"
+                        android:fontFamily="@font/regular"
+                        android:padding="10dp"
+                        android:backgroundTint="@color/gray"
+                        android:background="@drawable/edittext"
+                        />
+
+                    <EditText
+                        android:id="@+id/id_twit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:hint="Twitter"
+                        android:fontFamily="@font/regular"
+                        android:textColorHint="@color/light_gray"
+                        android:padding="10dp"
+                        android:backgroundTint="@color/gray"
+                        android:background="@drawable/edittext"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/gray"
+                android:backgroundTint="@color/gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/infsup"
+                    android:fontFamily="@font/bold"
+                    android:drawableEnd="@drawable/arrow"
+                    android:text="Informations supplémentaires"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/infosupp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/id_nat"
+                        android:fontFamily="@font/regular"
+                        android:layout_margin="10dp"
+                        android:textColorHint="@color/light_gray"
+                        android:hint="nationalité"
+                        android:backgroundTint="@color/gray"
+                        android:padding="10dp"
+                        android:background="@drawable/edittext"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/regular"
+                        android:hint="Status"
+                        android:textColorHint="@color/light_gray"
+                        android:id="@+id/id_status"
+                        android:padding="10dp"
+                        android:backgroundTint="@color/gray"
+                        android:background="@drawable/edittext"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/regular"
+                        android:hint="Adresse Réelle"
+                        android:textColorHint="@color/light_gray"
+                        android:id="@+id/id_adresse"
+                        android:padding="10dp"
+                        android:gravity="top"
+                        android:backgroundTint="@color/gray"
+                        android:background="@drawable/edittext"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:id="@+id/mdp"
+                    android:fontFamily="@font/bold"
+                    android:drawableEnd="@drawable/arrow"
+                    android:text="Changer le mot de passe"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mdp1">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/regular"
+                        android:hint="Nouveau Mot de passe"
+                        android:textColorHint="@color/light_gray"
+                        android:id="@+id/newpass"
+                        android:padding="10dp"
+                        android:backgroundTint="@color/gray"
+                        android:background="@drawable/edittext"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:hint="Confirmation de nouveau Mot de asse"
+                        android:textColorHint="@color/light_gray"
+                        android:id="@+id/newpasscon"
+                        android:padding="10dp"
+                        android:fontFamily="@font/regular"
+                        android:gravity="top"
+                        android:backgroundTint="@color/gray"
+                        android:background="@drawable/edittext"
+                        />
+                    <TextView
+                        android:id="@+id/error"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:textSize="10dp"
+                        android:fontFamily="@font/regular"
+                        android:visibility="gone"
+                        android:layout_marginStart="20dp"
+                        android:textColor="@color/red"
+                        android:text="Mot de passe non valide"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <Button
+                android:layout_width="236dp"
+                android:id="@+id/modifier"
+                android:fontFamily="@font/bold"
+                android:layout_height="wrap_content"
+                android:text="Sauvgarder les modifications"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/blue"
+                android:layout_gravity="center"/>
+            <Button
+            android:layout_width="236dp"
+            android:id="@+id/annuler"
+            android:layout_height="wrap_content"
+            android:text="Annuler"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/black"
+            android:backgroundTint="@color/gray"
+            android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

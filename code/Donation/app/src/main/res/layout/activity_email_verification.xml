@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/verification_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Un e-mail de vérification a été envoyé."
+        android:textSize="16sp"
+        android:fontFamily="@font/bold"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+
+
+    <TextView
+        android:id="@+id/verification_instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Si vous n'avez pas reçu l'e-mail, veuillez vérifier votre dossier de spam ou cliquez ci-dessous pour renvoyer l'e-mail de vérification."
+        android:textSize="14sp"
+        android:gravity="center"
+        android:fontFamily="@font/regular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"/>
+
+    <Button
+        android:id="@+id/resend_verification_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Renvoyer l'e-mail"
+        android:fontFamily="@font/bold"
+        android:backgroundTint="@color/blue"
+        android:layout_below="@id/verification_instructions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+</RelativeLayout>

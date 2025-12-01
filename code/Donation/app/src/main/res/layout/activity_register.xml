@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/activity_register"
+    tools:context=".RegisterActivity"
+    android:background="@color/lightblue2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:padding="24dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textStyle="italic|bold"
+                android:textSize="20dp"
+                android:fontFamily="@font/bold"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                android:layout_height="wrap_content"
+                android:text="Créez un compte et commencez à faire des dons pour soutenir les causes qui vous tiennent à cœur."/>
+
+            <EditText
+                android:id="@+id/namereg"
+                android:textColorHint="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/regular"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext"
+                android:drawableStart="@drawable/fullname"
+                android:drawablePadding="8dp"
+                android:hint="@string/nom_complet"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/emailreg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/regular"
+                android:layout_marginTop="20dp"
+                android:textColorHint="@color/black"
+                android:background="@drawable/edittext"
+                android:drawableStart="@drawable/mail"
+                android:drawablePadding="8dp"
+                android:hint="@string/adresse_e_mail"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress"
+                android:importantForAutofill="no" />
+            <TextView
+                android:id="@+id/error_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:textSize="10dp"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                android:text="@string/veuillez_entrer_une_adresse_e_mail_valide"/>
+
+            <EditText
+                android:id="@+id/telreg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/regular"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext"
+                android:drawableStart="@drawable/phone"
+                android:drawablePadding="8dp"
+                android:hint="@string/num_ro_de_t_lephone"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:inputType="number"
+                tools:ignore="Autofill" />
+            <TextView
+                android:id="@+id/error_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:textColor="@color/red"
+                android:textSize="10dp"
+                android:visibility="gone"
+                android:text="Veuillez entrer un numéro de téléphone valide"/>
+
+            <EditText
+                android:id="@+id/passreg"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/regular"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext"
+                android:drawableStart="@drawable/lock"
+                android:drawablePadding="8dp"
+                android:hint="@string/mot_de_passe"
+                android:padding="8dp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                tools:ignore="Autofill"
+                android:inputType="textPassword"
+                app:passwordToggleEnabled="true" />
+            <TextView
+                android:id="@+id/error_mdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:textSize="10dp"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                android:text="Le mot de passe doit contenir au moins 6 caractéres"/>
+            <TextView
+                android:id="@+id/error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:layout_gravity="start"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                android:text="@string/tous_les_champs_sont_requis"/>
+
+            <Button
+                android:id="@+id/regbouton"
+                android:layout_width="200dp"
+                android:fontFamily="@font/bold"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/blue"
+                android:text="@string/s_inscrire"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:fontFamily="@font/regular"
+                    android:id="@+id/already_have_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vous_avez_d_ja_un_compte"
+                    android:textColor="@color/black"
+
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/connect_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/se_connecter"
+                    android:fontFamily="@font/bold"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

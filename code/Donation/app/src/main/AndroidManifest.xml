@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logoround"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Base.Theme.Test1000"
+        tools:targetApi="31">
+    <activity
+            android:name=".AddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UsersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHomeActivity"
+            android:exported="false" />
+        <activity android:name=".AdminEventActivity"
+            android:exported="false"/>
+        <activity android:name=".AdminProfilActivity"
+            android:exported="false"/>
+        <activity android:name=".AdminParametreActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".FavoritesActivity"
+            android:exported="false" />
+        <activity android:name=".VoirtousActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsNotifActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DonationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailSocietyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EventDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParametreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".EditProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FirstActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HistoriqueActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThirdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EmailVerificationActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBuJ5HxLVUrs5G0FZw546uTnp7Ry4LgrgM" />
+    </application>
+
+</manifest>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:src="@drawable/third"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:gravity="center"
+        android:text="Partagez votre expérience avec vos amis et votre famille. Votre soutien est notre plus grande motivation."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        android:fontFamily="@font/regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.696" />
+
+    <LinearLayout
+        android:id="@+id/page_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@id/next3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/page1"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/inactive_cercle" />
+
+        <ImageView
+            android:id="@+id/page2"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/inactive_cercle" />
+
+        <ImageView
+            android:id="@+id/page3"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/active_cercle" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next3"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/next"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bold"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

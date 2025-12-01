@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "438282581095",
+    "project_id": "donapp-a7049",
+    "storage_bucket": "donapp-a7049.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438282581095:android:0f65f730edc5a6f261d0c2",
+        "android_client_info": {
+          "package_name": "com.example.test1000"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVWO0KxlQKrvOK0hi_kNmvc5Ypy_W7Ukk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

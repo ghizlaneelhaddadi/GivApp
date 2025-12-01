@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SettingsNotifActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:fontFamily="@font/bold"
+            android:layout_marginStart="20dp"
+            android:contentDescription="@string/retour"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/notifications"
+            android:textColor="@color/blue"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Notifications Générales Section -->
+    <TextView
+        android:fontFamily="@font/bold"
+        android:id="@+id/section_general_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notifications_generales"
+        android:textSize="18sp"
+        android:textColor="@color/blue"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp" />
+
+    <LinearLayout
+        android:id="@+id/push_notifications_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/section_general_notifications"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:fontFamily="@font/regular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/push_notifications"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <Switch
+            android:id="@+id/switch_push_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <!-- Message Notifications Section -->
+    <TextView
+        android:fontFamily="@font/bold"
+        android:id="@+id/section_message_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message_notifications"
+        android:textSize="18sp"
+        android:textColor="@color/blue"
+        app:layout_constraintTop_toBottomOf="@id/push_notifications_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp" />
+
+    <LinearLayout
+        android:id="@+id/message_notifications_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/section_message_notifications"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/regular"
+            android:text="@string/messages"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <Switch
+            android:id="@+id/switch_message_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reminder_notifications_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/message_notifications_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/regular"
+            android:text="@string/reminders"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <Switch
+            android:id="@+id/switch_reminder_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <!-- App Notifications Section -->
+    <TextView
+        android:id="@+id/section_app_notifications"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/bold"
+        android:layout_height="wrap_content"
+        android:text="@string/app_notifications"
+        android:textSize="18sp"
+        android:textColor="@color/blue"
+        app:layout_constraintTop_toBottomOf="@id/reminder_notifications_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp" />
+
+    <LinearLayout
+        android:id="@+id/sound_notifications_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/section_app_notifications"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/regular"
+            android:text="@string/sound"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <Switch
+            android:id="@+id/switch_sound_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tone_notifications_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/sound_notifications_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/regular"
+            android:text="@string/tone"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_tone"
+            android:textSize="16sp"
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vibrate_notifications_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tone_notifications_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/vibrate"
+            android:fontFamily="@font/regular"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <Switch
+            android:id="@+id/switch_vibrate_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

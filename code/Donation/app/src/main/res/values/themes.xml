@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.Test1000" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="android:fontFamily">@font/bold</item>
+        <item name="fontFamily">@font/regular</item>
+        <item name="android:statusBarColor">@color/blue</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="Base.Base.Theme.Test1000" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="android:fontFamily">@font/regular</item>
+        <item name="android:statusBarColor">@color/blue</item>
+        <item name="toolbarStyle">@style/CustomAppBarStyle</item>
+        <item name="sliderStyle">@style/CustomSliderStyle</item>
+    </style>
+
+</resources>
